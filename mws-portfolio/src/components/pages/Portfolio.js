@@ -5,19 +5,19 @@ const projects = [
   {
     name: "JS Quiz",
     desc: "An application to test your JavaScript knowledge.",
-    link: "#challenge2",
+    link: "https://mwelle238.github.io/MWs-JS-quiz/",
     img: "tech-image-1.jpg"
   },
   {
-    name: "Fasion Forecast",
-    desc: "An application matching fasion items to the weather forecast.",
-    link: "#project1",
+    name: "Weather Forecast",
+    desc: "A simple weather forecast app.",
+    link: "https://mwelle238.github.io/MWs-Weather-App/",
     img: "tech-image-2.jpg"
   },
   {
     name: "Stadium Talk",
     desc: "An application to talk about baseball stadiums",
-    link: "#project2",
+    link: "https://mlb-stadium-talk.herokuapp.com/",
     img: "tech-image-3.jpg"
   },
   {
@@ -27,15 +27,15 @@ const projects = [
     img: "tech-image-4.jpg"
   },
   {
-    name: "App5",
-    desc: "Coming Soon",
-    link: "#app5",
+    name: "Daily Planner",
+    desc: "An app to keep track of meetings and appointments",
+    link: "https://mwelle238.github.io/MWs-daily-planner/",
     img: "tech-image-5.jpg"
   },
   {
-    name: "App6",
-    desc: "Coming Soon",
-    link: "#app6",
+    name: "Password Generator",
+    desc: "An app to generate passwords",
+    link: "https://mwelle238.github.io/MWs-Password-Generator/",
     img: "tech-image-6.jpg"
   },
 ]
