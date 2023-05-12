@@ -27,19 +27,24 @@ const App = () => {
   const styles = {
     bg: {
       backgroundImage: "linear-gradient(rgba( 75,6,75,.8) 20%, rgba( 75, 6, 75, .4) 100%)",
+      height: "100vh",
     },
   }
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div style={styles.bg}>
-      <Header />
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+    <div style={styles.bg} className='d-flex flex-column justify-content-between'>
       <div>
-        {renderPage()}
+        <Header />
+        <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+        <div>
+          {renderPage()}
+        </div>
       </div>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };
