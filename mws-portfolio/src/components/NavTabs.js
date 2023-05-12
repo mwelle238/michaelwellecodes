@@ -7,12 +7,10 @@ const styles = {
 
   },
   navPillInactive: { 
-    //backgroundColor: "Purple",
     color: "Yellow"
   },
   navBar: {
     borderBottom: '2px',
-    //backgroundColor: "Purple",
   }
 }
 
@@ -48,6 +46,16 @@ function NavTabs({ currentPage, handlePageChange }) {
           style={currentPage === 'Contact' ? styles.navPillActive : styles.navPillInactive}
         >
           Contact
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#resume"
+          onClick={() => handlePageChange('Resume')}
+          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+          style={currentPage === 'Resume' ? styles.navPillActive : styles.navPillInactive}
+        >
+          Resume
         </a>
       </li>
     </ul>

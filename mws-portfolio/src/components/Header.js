@@ -10,9 +10,6 @@ const styles = {
       height: '128px',
       width: '128px'
     },
-    header: {
-      //backgroundColor: "purple",
-    }
 }
 
 export default function Header(){
@@ -20,7 +17,7 @@ export default function Header(){
         <header className='d-flex flex-column' style={styles.header}>
             <div className='d-flex flex-row justify-content-between align-items-end'>
                 <h1 style={styles.name}>Michael Welle</h1>          
-                <img src='profile.jpg' style={styles.profilePic}/>
+                <img src='profile.jpg' style={styles.profilePic} alt="profile pic"/>
             </div>
         </header>
     )

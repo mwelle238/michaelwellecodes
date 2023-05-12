@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Portfolio from './components/pages/Portfolio';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
-
+import Resume from './components/pages/Resume';
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('About');
@@ -17,6 +17,9 @@ const App = () => {
     }
     if (currentPage === 'About') {
       return <About />;
+    }
+    if (currentPage === 'Resume') {
+      return <Resume />;
     }
     return <Portfolio />;
   };

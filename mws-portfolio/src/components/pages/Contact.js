@@ -2,21 +2,26 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <div>
+    <div className='p-3'>
       <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <hr/>
+      <form class="form message-form">
+      <div class="form-group">
+        <label for="name-message">Name:</label><br/>
+        <input class="form-input" type="text" id="name-message" size="38"/>
+      </div>
+      <div class="form-group">
+        <label for="email-message">Email:</label><br/>
+        <input class="form-input" type="text" id="email-message" size="38"/>
+      </div>
+      <div class="form-group">
+        <label for="text-message">Message:</label><br/>
+        <textarea class="form-input" type="text" id="text-message" rows="5" cols="41" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">send</button>
+      </div>
+    </form>
     </div>
   );
 }
