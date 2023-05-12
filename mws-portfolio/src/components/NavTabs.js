@@ -10,7 +10,8 @@ const styles = {
     color: "Yellow"
   },
   navBar: {
-    borderBottom: '2px',
+    paddingBottom: '3px',
+    borderBottom: '1px solid black',
   }
 }
 
