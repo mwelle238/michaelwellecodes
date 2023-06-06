@@ -21,9 +21,9 @@ const projects = [
     img: "tech-image-3.jpg"
   },
   {
-    name: "Project3",
-    desc: "Coming Soon",
-    link: "#project3",
+    name: "NotedV2",
+    desc: "An application to take notes, plan events, and mealplan",
+    link: "https://intense-basin-02456.herokuapp.com/",
     img: "tech-image-4.jpg"
   },
   {
