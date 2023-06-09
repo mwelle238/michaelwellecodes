@@ -4,7 +4,7 @@ const styles = {
     name: {
       fontSize: '3rem',
       marginLeft: '20px',
-
+      color: 'rgb(33,37,41)'
     },
     profilePic: {
       height: '128px',

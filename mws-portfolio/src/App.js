@@ -1,4 +1,6 @@
+// import libraries
 import React, { useState } from 'react';
+// import pages and components
 import NavTabs from './components/NavTabs';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -6,6 +8,8 @@ import Portfolio from './components/pages/Portfolio';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import Resume from './components/pages/Resume';
+// import css
+import 'rsuite/dist/rsuite.min.css';
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('About');
