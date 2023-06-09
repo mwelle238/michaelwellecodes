@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/wretched-salamander/static/css/main.c2cab247.css",
-    "main.js": "/wretched-salamander/static/js/main.ff5e7ddb.js",
+    "main.js": "/wretched-salamander/static/js/main.bd7dfca7.js",
     "index.html": "/wretched-salamander/index.html",
     "main.c2cab247.css.map": "/wretched-salamander/static/css/main.c2cab247.css.map",
-    "main.ff5e7ddb.js.map": "/wretched-salamander/static/js/main.ff5e7ddb.js.map"
+    "main.bd7dfca7.js.map": "/wretched-salamander/static/js/main.bd7dfca7.js.map"
   },
   "entrypoints": [
     "static/css/main.c2cab247.css",
-    "static/js/main.ff5e7ddb.js"
+    "static/js/main.bd7dfca7.js"
   ]
 }
