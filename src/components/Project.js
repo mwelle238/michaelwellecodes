@@ -1,4 +1,5 @@
 import React from 'react';
+import { projects } from '../utils/reducers'
 
 const styles = {
     cardHeader: {
@@ -13,10 +14,11 @@ const styles = {
     }
 }
 
-function Project(props){
+
+function Project(){
     return (
         <div className='d-flex flex-row flex-wrap justify-content-between container-fluid'>
-        {props.projects.map(project => (
+        {projects.map(project => (
             <div className='col-12 col-md-6 col-xxl-4 p-2'>
                 <a href={project.link} style={styles.link} target="_blank" rel="noreferrer">
                     <div className='card card-header' style={styles.cardHeader}>
