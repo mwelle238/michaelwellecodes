@@ -1,5 +1,5 @@
 import React, { useState, useRef, forwardRef } from 'react';
-import { Form, Button, Schema, Input } from 'rsuite';
+import { Form, Button, Schema, Input, useToaster, Notification } from 'rsuite';
 import emailjs from '@emailjs/browser';
 
 const { StringType } = Schema.Types;
@@ -29,27 +29,42 @@ export default function Contact() {
     email: "",
     message: "",
   });
-  //const [formError, setFormError] = useState({});
+  const [formError, setFormError] = useState({});
+  const [disableButton, setDisableButton] = useState(false);
   const formRef = useRef();
+  const toaster = useToaster();
+
+  const messageSuccess = (
+    <Notification type='success' header="success" closeable >
+      Message Sent Successfully
+    </Notification>
+  )
+  const messageError = (
+    <Notification type='error' header='error' closeable >
+      Form Error, Message not Sent
+    </Notification>
+  )
 
   const sendMessage = async () => {
+    setDisableButton(true);
     if (!formRef.current.check()) {
       console.error("Form Error");
+      toaster.push(messageError, 'topCenter');
       return;
     }
     try {
-      const data = await emailjs.send('service_m3c0ks3', 'template_e7b7ctn', { ...formState }, 'GgW1A_KlVry9MPML6' );
-      console.log(data);
+      await emailjs.send('service_m3c0ks3', 'template_e7b7ctn', { ...formState }, 'GgW1A_KlVry9MPML6' );
       setFormState({
         name: "",
         email: "",
         message: "",
       });
-      alert("Message Sent");  //change this to a modal and notification.
+      toaster.push(messageSuccess, 'topCenter');
     } catch (err) {
       console.error(err);
-      return;
+      toaster.push(messageError, 'topCenter');
     }
+    setDisableButton(false);
   }
   return (
     <div className='p-3'>
@@ -66,7 +81,7 @@ export default function Contact() {
         <TextField name="name" label="Name"/>
         <TextField name="email" label="Email"/>
         <TextField name="message" label="Message" accepter={Textarea} rows={5}/>
-        <Button appearance='primary' type ='submit'>
+        <Button appearance='primary' type ='submit' disabled={disableButton}>
           Send Message
         </Button>
       </Form>

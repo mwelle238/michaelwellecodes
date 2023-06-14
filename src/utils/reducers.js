@@ -21,6 +21,6 @@ export const projects = [
       name: "NotedV2",
       desc: "An application to take notes, plan events, and mealplan",
       link: "https://noted2.herokuapp.com/",
-      img: "noted.jpg"
+      img: "noted.JPG"
     },
 ];
