@@ -19,7 +19,7 @@ function Project(){
     return (
         <div className='d-flex flex-row flex-wrap justify-content-between container-fluid'>
         {projects.map(project => (
-            <div className='col-12 col-md-6 col-xxl-4 p-2'>
+            <div className='col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 p-2'>
                 <a href={project.link} style={styles.link} target="_blank" rel="noreferrer">
                     <div className='card card-header' style={styles.cardHeader}>
                         <h2>{project.name}</h2>
