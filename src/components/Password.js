@@ -81,7 +81,7 @@ export default function Password() {
 
     return (
         <div className='d-flex flex-row flex-wrap justify-content-between container-fluid'>
-            <div className='col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 p-2' onClick={(handleOpen)}>
+            <div className='col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-2' onClick={(handleOpen)}>
                 <div className='card card-header' style={styles.cardHeader}>
                     <h2>Password Generator</h2>
                 </div>

@@ -29,7 +29,6 @@ export default function Contact() {
     email: "",
     message: "",
   });
-  const [formError, setFormError] = useState({});
   const [disableButton, setDisableButton] = useState(false);
   const formRef = useRef();
   const toaster = useToaster();
@@ -76,7 +75,6 @@ export default function Contact() {
             formValue={formState}
             onSubmit={sendMessage}
             onChange={setFormState}
-            onCheck={setFormError}
             >
         <TextField name="name" label="Name"/>
         <TextField name="email" label="Email"/>

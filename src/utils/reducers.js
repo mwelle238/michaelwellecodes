@@ -24,3 +24,14 @@ export const projects = [
       img: "noted.JPG"
     },
 ];
+
+export const skills = [
+  'HTML',
+  'CSS',
+  'Javascript',
+  'Node',
+  'Express',
+  'React',
+  'MySQL',
+  'MongoDB',
+];
